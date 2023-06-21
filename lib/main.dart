@@ -38,11 +38,22 @@ class MyHomePage extends StatelessWidget {
             Expanded(
                 flex: 10,
                 child: ListView.builder(
-                    itemCount: 5,
-                    padding: EdgeInsets.all(4),
+                    itemCount: 7,
                     itemBuilder: (context, i){
-                      return ListTile(
-                        title: Text("oie"),
+                      return Padding(padding: const EdgeInsets.all(4),
+                        child: GestureDetector(
+                          onTap: (){
+                            print("você clicou");
+                          },
+                          onLongPress: (){
+                            print("você pressionou muito tempo");
+                          },
+                          child:  Container(
+                            color: Colors.white,
+                            width: MediaQuery.of(context).size.width,
+                            child: Text("opa"),
+                          ),
+                        )
                       );
                     }
                 )
