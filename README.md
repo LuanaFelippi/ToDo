@@ -1,1 +1,1 @@
-eu amo o italo
+This is my first flutter project! 
