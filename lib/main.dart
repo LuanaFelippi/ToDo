@@ -42,7 +42,6 @@ class MyHomePage extends StatelessWidget {
                     padding: EdgeInsets.all(4),
                     itemBuilder: (context, i){
                       return ListTile(
-
                         title: Text("oie"),
                       );
                     }
